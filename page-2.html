@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
-  </head>
-  <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 3</title>
+  
+  <script type="module" crossorigin src="/goit-hw-10-test/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-hw-10-test/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="modulepreload" crossorigin href="/goit-hw-10-test/assets/vendor-77e16229.js">
+  <link rel="stylesheet" href="/goit-hw-10-test/assets/vendor-7a007824.css">
+  <link rel="stylesheet" href="/goit-hw-10-test/assets/page-2-ff2515e1.css">
+</head>
+
+<body>
+  <section>
+    <a href="./index.html">Go to home</a>
+    <h1 class="title-timer">Welcome to Timer</h1>
+  </section>
+
+  <div class="selected-date">
+    <input type="text" id="datetime-picker" />
+    <button type="button" data-start> Пуск </button>
+  </div>
+  <div class="timer">
+    <div class="field">
+      <span class="value" data-days> 00 </span>
+      <span class="label"> Дні </span>
+    </div>
+    <div class="field">
+      <span class="value" data-hours> 00 </span>
+      <span class="label"> Години </span>
+    </div>
+    <div class="field">
+      <span class="value" data-minutes> 00 </span>
+      <span class="label"> Хвилини </span>
+    </div>
+    <div class="field">
+      <span class="value" data-seconds> 00 </span>
+      <span class="label"> Секунди </span>
+    </div>
+  </div>
+
+  <div class="current-time">
+    <div>
+      <span class="curent-label"> День тиждня:</span>
+      <span class="curent-value_week"> 0 </span>
+    </div>
+    <div>
+      <span class="curent-label"> День місяця:</span>
+      <span class="curent-value_day"> 0 </span>
+    </div>
+    <div>
+      <span class="curent-label"> Місяць:</span>
+      <span class="curent-value_month"> 0 </span>
+    </div>
+    <div>
+      <span class="curent-label"> Рік:</span>
+      <span class="curent-value_year"> 0 </span>
+    </div>
+  </div>
+
+  <div class="clock-box">
+    <p>Поточний час:</p>
+    <div class="clock-box_time"><span class="clock-hours">00</span>:<span class="clock-minutes">00</span>:<span
+        class="clock-seconds">00</span></div>
+  </div>
+
+
+
+  
+</body>
+
 </html>
